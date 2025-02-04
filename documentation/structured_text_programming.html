@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="nl" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thema: Stuctured Text Programming &mdash; Avans: Codesys Geavanceerd PLC Programmeren workshop 0.1 documentatie</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a57088fb"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=e4d38c6a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Thema: Object Oriented Programming" href="object_oriented_programming.html" />
+    <link rel="prev" title="Inleiding" href="inleiding.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Avans: Codesys Geavanceerd PLC Programmeren workshop
+              <img src="../_static/avans-hogeschool-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Zoek in documentatie" aria-label="Zoek in documentatie" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigatiemenu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="inleiding.html">Inleiding</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Thema: Stuctured Text Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#context-bekermagazijn">Context: Bekermagazijn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#besturingseisen">Besturingseisen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opdracht-1-simulatie">Opdracht 1 Simulatie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tips-voor-de-opdracht">Tips voor de opdracht</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#opdracht-2-realworld">Opdracht 2 Realworld</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Tips voor de opdracht</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="object_oriented_programming.html">Thema: Object Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statemachine_programming.html">Thema: Statemachine Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesys_installatie.html">Codesys installate</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Navigatiemenu voor mobiel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Avans: Codesys Geavanceerd PLC Programmeren workshop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Paginanavigatie">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Thema: Stuctured Text Programming</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/documentation/structured_text_programming.md.txt" rel="nofollow"> Bekijk paginabron</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="thema-stuctured-text-programming">
+<h1>Thema: Stuctured Text Programming<a class="headerlink" href="#thema-stuctured-text-programming" title="Link to this heading"></a></h1>
+<section id="context-bekermagazijn">
+<h2>Context: Bekermagazijn<a class="headerlink" href="#context-bekermagazijn" title="Link to this heading"></a></h2>
+<p>In deze opdracht ga je het bekermagazijn programeren in de <strong>IEC-61131 PLC programeertaal Structured Text</strong>.</p>
+<p><img alt="image" src="../_images/beker_magazijn_real_world.png" /></p>
+<p><strong>Bekermagzijn Realworld</strong></p>
+<p><img alt="image" src="../_images/beker_magazijn_sumulatie.png" /></p>
+<p><strong>Bekermagzijn Simulatie</strong></p>
+</section>
+<section id="besturingseisen">
+<h2>Besturingseisen<a class="headerlink" href="#besturingseisen" title="Link to this heading"></a></h2>
+<p>De volgende besturingseisen zijn aan de orde:</p>
+<ul class="simple">
+<li><p>Na opstarten programma gaat groene-lamp branden</p></li>
+<li><p>Na drukken op “start” wordt 1 beker uitgestoten</p>
+<ul>
+<li><p>Alleen als het magazijn niet leeg is</p></li>
+<li><p>Gedurende het uitstoten is groene-lamp uit
+*Als magazijn leeg is zal gele-lamp oplichten
+*Als gestart wordt als magazijn leeg is zal rode-lamp oplichten en groene lamp uitgaan. Het systeem gaat in  de “Error”
+*De “Error” situatie kan worden opgelost door het geven van een Reset</p></li>
+<li><p>Na de Reset gaat de rode-lamp uit en de groene-lamp aan</p></li>
+</ul>
+</li>
+<li><p>Als er op de “noodstop” wordt gedrukt worden alle actuatoren (direct) gedeactiveerd en gaat het systeem in “Error”</p></li>
+</ul>
+</section>
+<section id="opdracht-1-simulatie">
+<h2>Opdracht 1 Simulatie<a class="headerlink" href="#opdracht-1-simulatie" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Maak eerst een testspecificatie</p></li>
+<li><p>Maak een structured-tekst programma van de beschreven besturingseisen</p></li>
+<li><p>Maak hiervoor gebruik van het voorbereide Codesys project:</p>
+<ul>
+<li><p><em>“Magazijn Structured Text 2V1 - Structured Text.project”</em></p></li>
+<li><p>Download: https://github.com/AvansMechatronica/Codesys_IAP.git</p></li>
+<li><p>Zie map: Opdrachten\IAP</p></li>
+</ul>
+</li>
+<li><p>Plaats je structured tekst code in de “main (PRG)” POU</p>
+<ul>
+<li><p><em>Let op: Wijzig in geen geval de code in de map Simulatie</em></p></li>
+</ul>
+</li>
+<li><p>Test simulatie de simulatie aan de hand van je testspecificatie</p></li>
+</ul>
+<section id="tips-voor-de-opdracht">
+<h3>Tips voor de opdracht<a class="headerlink" href="#tips-voor-de-opdracht" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Maak gebruik van de handleiding van Codesys, zie Blackboard</p></li>
+<li><p>Plaats programma’s in de tab “POUs”, Programma, kies functionele programma namen</p></li>
+<li><p>De Inputs en Outputs zijn gedefinieerd in de GVL lijst.</p></li>
+<li><p>Gebruik de juiste prefix voor de namen van variabelen</p></li>
+<li><p>Zorg dat het “Device (CODESYS Control Win V3)” project actief is</p></li>
+</ul>
+</section>
+</section>
+<section id="opdracht-2-realworld">
+<h2>Opdracht 2 Realworld<a class="headerlink" href="#opdracht-2-realworld" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Om het programma te testen in realworld wordt er gebruik gemaakt van één van de PLC opstellingen met een bekermagazijn.</p></li>
+<li><p>Configureer de inputs en outputs van de Hitachi PLC</p></li>
+<li><p>Zoek de juiste IO op in de documentatie van de PLC opstelling</p></li>
+<li><p>Gebruik het programma (“main” POU) uit opdracht 1(simulatie) om de werking te testen</p></li>
+<li><p>Test de functionaliteit van het programma aan de hand van je testspecificatie</p></li>
+</ul>
+<section id="id1">
+<h3>Tips voor de opdracht<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Zorg dat het “HX-CP1S08 CPU (HX-CP1S08)” project actief is</p></li>
+<li><p>Configureer de gateway op de juiste wijze</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Voettekst">
+        <a href="inleiding.html" class="btn btn-neutral float-left" title="Inleiding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Vorige</a>
+        <a href="object_oriented_programming.html" class="btn btn-neutral float-right" title="Thema: Object Oriented Programming" accesskey="n" rel="next">Volgende <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Avans ATIx: Gerard Harkema.</p>
+  </div>
+
+  Gebouwd met <a href="https://www.sphinx-doc.org/">Sphinx</a> met een
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thema</a>
+    geleverd door <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

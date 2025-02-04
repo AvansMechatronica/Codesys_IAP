@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="nl" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thema: Object Oriented Programming &mdash; Avans: Codesys Geavanceerd PLC Programmeren workshop 0.1 documentatie</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=a57088fb"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/translations.js?v=e4d38c6a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Thema: Statemachine Programming" href="statemachine_programming.html" />
+    <link rel="prev" title="Thema: Stuctured Text Programming" href="structured_text_programming.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Avans: Codesys Geavanceerd PLC Programmeren workshop
+              <img src="../_static/avans-hogeschool-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Zoek in documentatie" aria-label="Zoek in documentatie" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigatiemenu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="inleiding.html">Inleiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structured_text_programming.html">Thema: Stuctured Text Programming</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Thema: Object Oriented Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#context-bekermagazijn">Context: Bekermagazijn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#besturingseisen">Besturingseisen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opdracht-1-simulatie">Opdracht 1 Simulatie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#de-memberfuncties-van-de-magazijnclass">De memberfuncties van de MagazijnClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tips-voor-de-opdracht">Tips voor de opdracht</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#opdracht-2-realworld">Opdracht 2 Realworld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opdracht-3-hmi">Opdracht 3 HMI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#de-memberfuncties-van-de-hmiclass">De memberfuncties van de hmiClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Tips voor de opdracht</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="statemachine_programming.html">Thema: Statemachine Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesys_installatie.html">Codesys installate</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Navigatiemenu voor mobiel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Avans: Codesys Geavanceerd PLC Programmeren workshop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Paginanavigatie">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Thema: Object Oriented Programming</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/documentation/object_oriented_programming.md.txt" rel="nofollow"> Bekijk paginabron</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="thema-object-oriented-programming">
+<h1>Thema: Object Oriented Programming<a class="headerlink" href="#thema-object-oriented-programming" title="Link to this heading"></a></h1>
+<section id="context-bekermagazijn">
+<h2>Context: Bekermagazijn<a class="headerlink" href="#context-bekermagazijn" title="Link to this heading"></a></h2>
+<p>In deze opdracht ga je het bekermagazijn Object Georiënteerd programeren</p>
+<p><img alt="image" src="../_images/beker_magazijn_real_world.png" /></p>
+<p><strong>Bekermagzijn Realworld</strong></p>
+<p><img alt="image" src="../_images/beker_magazijn_sumulatie.png" /></p>
+<p><strong>Bekermagzijn Simulatie</strong></p>
+</section>
+<section id="besturingseisen">
+<h2>Besturingseisen<a class="headerlink" href="#besturingseisen" title="Link to this heading"></a></h2>
+<p>De volgende besturingseisen zijn aan de orde:</p>
+<ul class="simple">
+<li><p>Na opstarten programma gaat groene-lamp branden</p></li>
+<li><p>Na drukken op “start” wordt 1 beker uitgestoten</p>
+<ul>
+<li><p>Alleen als het magazijn niet leeg is</p></li>
+<li><p>Gedurende het uitstoten is groene-lamp uit
+*Als magazijn leeg is zal gele-lamp oplichten
+*Als gestart wordt als magazijn leeg is zal rode-lamp oplichten en groene lamp uitgaan. Het systeem gaat in  de “Error”
+*De “Error” situatie kan worden opgelost door het geven van een Reset</p></li>
+<li><p>Na de Reset gaat de rode-lamp uit en de groene-lamp aan</p></li>
+</ul>
+</li>
+<li><p>Als er op de “noodstop” wordt gedrukt worden alle actuatoren (direct) gedeactiveerd en gaat het systeem in “Error”</p></li>
+</ul>
+</section>
+<section id="opdracht-1-simulatie">
+<h2>Opdracht 1 Simulatie<a class="headerlink" href="#opdracht-1-simulatie" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Maak eerst een testspecificatie</p></li>
+<li><p>Maak een object-georiënteerd structured-tekst programma van de beschreven besturingseisen.</p></li>
+<li><p>Ga uit van de hieronder getoonde klassendiagram van het magazijn</p></li>
+</ul>
+<p><img alt="image" src="../_images/klasse_diagram_1.png" /></p>
+<section id="de-memberfuncties-van-de-magazijnclass">
+<h3>De memberfuncties van de MagazijnClass<a class="headerlink" href="#de-memberfuncties-van-de-magazijnclass" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>cycle()</strong>: Update de actuatoren(outputs) aan de hand van toestandsveranderingen van de sensoren(inputs)</p></li>
+<li><p><strong>start()</strong>: Start het uitstoten van een beker uit het magazijn. Als het magazijn wordt gestart en het is leeg dan gaat het in de fout-toestand</p></li>
+<li><p><strong>isError()</strong>: Geeft middels een BOOL weer dat er een fout tijdens het uitstoten is opgetreden</p></li>
+<li><p><strong>isMagazijnLeeg()</strong>: Geeft middels een BOOL weer dat het magazijn leeg is</p></li>
+<li><p><strong>isKlaar()</strong>: Geeft middels een BOOL weer er een nieuwe start gegeven kan worden</p></li>
+<li><p><strong>noodstop()</strong>: Voert een noodstop uit, alle actautoren(outputs) worden gedeactiveert, het object gaat in de fout-toestand</p></li>
+<li><p><strong>reset()</strong>: heft een fout-toestand op</p></li>
+</ul>
+</section>
+<section id="tips-voor-de-opdracht">
+<h3>Tips voor de opdracht<a class="headerlink" href="#tips-voor-de-opdracht" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Maak hiervoor gebruik van het voorbereide Codesys project:</p>
+<ul>
+<li><p><em>“Magazijn Structured Text 2V1 - OO PLC programming.project”</em></p>
+<ul>
+<li><p>Download: https://github.com/AvansMechatronica/Codesys_IAP.git</p></li>
+<li><p>Zie map: Opdrachten\IAP</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Het hoofdprogramma “MagazijnTest” POU is al geheel voorbereid in hoef je niet meer te wijzigen</p>
+<ul>
+<li><p>De klasse <strong>“magazijnClass”</strong> is in de “MagazijnTest” POU afgeleid als “magazijn” object.</p></li>
+<li><p>Let op: Wijzig in geen geval de code in de map Simulatie</p></li>
+</ul>
+</li>
+<li><p>Maak de klasse <strong>“MagazijnClass”</strong> compleet</p>
+<ul>
+<li><p>Maak eerst de member functies, denk na over</p>
+<ul>
+<li><p>Parameters/variabelen</p></li>
+<li><p>Return waardes</p></li>
+</ul>
+</li>
+<li><p>Maak de code voor alle memberfuncties van de klasse compleet</p></li>
+</ul>
+</li>
+<li><p>Test simulatie de simulatie aan de hand van je testspecificatie</p></li>
+</ul>
+</section>
+</section>
+<section id="opdracht-2-realworld">
+<h2>Opdracht 2 Realworld<a class="headerlink" href="#opdracht-2-realworld" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Om het programma te testen in realworld wordt er gebruik gemaakt van één van de PLC opstellingen met een bekermagazijn.</p></li>
+<li><p>Configureer de inputs en outputs van de Hitachi PLC</p>
+<ul>
+<li><p>Zoek de juiste IO op in de documentatie van de PLC opstelling</p></li>
+</ul>
+</li>
+<li><p>Gebruik het programma (“main” POU) uit deze opdracht (simulatie) om de werking te testen</p></li>
+<li><p>Test de functionaliteit van het programma aan de hand van je testspecificatie</p></li>
+</ul>
+</section>
+<section id="opdracht-3-hmi">
+<h2>Opdracht 3 HMI<a class="headerlink" href="#opdracht-3-hmi" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Maak een HMI waarop de volgende items aanwezig zijn:</p>
+<ul>
+<li><p><strong>Aantal uitgestoten</strong>: Teller(indicator) welke aan geeft hoeveel bekers zijn uitgestoten</p></li>
+<li><p><strong>Reset aantal</strong>: Knop(control) waarmee de teller van het aantal uitgestoten bekers op 0 gezet kan worden.</p></li>
+<li><p><strong>Error</strong>: Lamp(indicator) die aangeeft dat het systeem in de fout toestand staat</p></li>
+</ul>
+</li>
+<li><p>Bij de HMI hoort de klasse <strong>“hmiClass”</strong></p></li>
+</ul>
+<p><img alt="image" src="../_images/klasse_diagram_2.png" /></p>
+<section id="de-memberfuncties-van-de-hmiclass">
+<h3>De memberfuncties van de hmiClass<a class="headerlink" href="#de-memberfuncties-van-de-hmiclass" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>incrementAantal()</strong>: Verhoogt het aantal bekers indicator op het hmi-paneel met 1</p></li>
+<li><p><strong>getAantal()</strong>: Geeft het aantal getelde bekers terug aan aanroepende klasse.</p></li>
+<li><p><strong>setError()</strong>: Afhankelijk van een meegegeven parameter zal de Error-lamp van de hmi oplichten.</p></li>
+<li><p><strong>reset()</strong>: Zet de Error lamp uit en zet de teller van het aantal bekers op 0</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Tips voor de opdracht<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Maak een hmi paneel(visualisatie)</p>
+<ul>
+<li><p>Plaats de 3 indicators/controls (aantal, Reset aantal en Error)</p></li>
+<li><p>Koppel de indicators/controls aan een globale variabele</p>
+<ul>
+<li><p>Kies functionele namen</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Maak een klasse <strong>“hmiClass”</strong></p>
+<ul>
+<li><p>met bijbehorende memberfuncties</p></li>
+</ul>
+</li>
+<li><p>Maak een afgeleid object van de <strong>“hmiClass”</strong> klasse in het “MagazijnTest” POU</p>
+<ul>
+<li><p>Kies een functionele naam voor het object</p></li>
+</ul>
+</li>
+<li><p>Maak de “MagazijnTest” POU compleet, zodanig dat de hmi gaat functioneren</p>
+<ul>
+<li><p>Test de functionaliteit</p>
+<ul>
+<li><p>Simulatie</p></li>
+<li><p>Real World</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Voettekst">
+        <a href="structured_text_programming.html" class="btn btn-neutral float-left" title="Thema: Stuctured Text Programming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Vorige</a>
+        <a href="statemachine_programming.html" class="btn btn-neutral float-right" title="Thema: Statemachine Programming" accesskey="n" rel="next">Volgende <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Avans ATIx: Gerard Harkema.</p>
+  </div>
+
+  Gebouwd met <a href="https://www.sphinx-doc.org/">Sphinx</a> met een
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thema</a>
+    geleverd door <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
