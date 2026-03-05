@@ -38,7 +38,7 @@ Deze kun je terugvinden in de opdracht over het thema *object-georiënteerd prog
 ### De toestanden van de MagazijnClass
 In onderstaande afbeelding is het UML state-dagram weergegeven van de toestanden met toestand-transities waarin de magzijnClasse zich kan bevinden.
 
-![image](../images/statemachine%201.png)
+![image](../images/statemachine_1.png)
 
 ### Tips voor de opdracht
 * Maak hiervoor gebruik van het voorbereide Codesys project:
