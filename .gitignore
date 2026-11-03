@@ -7,3 +7,6 @@
 *.bak*
 *.vbak*
 *.vux
+*.simulation.compileinfo
+*.simulation.bootinfo_guids
+*.simulation.compileinfo
