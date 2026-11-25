@@ -10,3 +10,5 @@
 *.simulation.compileinfo
 *.simulation.bootinfo_guids
 *.simulation.compileinfo
+# Reservekopieen van de CODESYS-Claude koppeling
+_backup/

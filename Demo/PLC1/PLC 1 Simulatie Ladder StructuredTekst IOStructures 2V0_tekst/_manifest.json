@@ -1,0 +1,545 @@
+{
+  "project": "D:\\Codesys_IAP\\Demo\\PLC1\\PLC 1 Simulatie Ladder StructuredTekst IOStructures 2V0.project", 
+  "objects": [
+    {
+      "guid": "5f9949a3-30c4-4a0e-be7b-d8c1c0470583", 
+      "type": "pou", 
+      "file": "Programma Structured Text/OverzetterClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "5e56ae87-ba35-45d4-b1ac-4d6d0bfa13a7", 
+      "type": "pou", 
+      "file": "Simulatie/MagazijnSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "c0d4389f-aec7-44e4-8c0f-c15a754a827c", 
+      "type": "pou", 
+      "file": "Simulatie/SorterenSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "43897f4f-5ee7-47b6-8546-8090bd443650", 
+      "type": "gvl", 
+      "file": "Simulatie/SIM.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "a8a5894c-a8f6-431d-a3da-6303fc193702", 
+      "type": "pou", 
+      "file": "Simulatie/OverzetterSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "57933e15-edac-47b3-a9ac-447e50b3dc87", 
+      "type": "dut", 
+      "file": "Simulatie/OverzetterDUT.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "5fa87872-0428-462d-8fc8-8afb521fd056", 
+      "type": "pou", 
+      "file": "Programma Structured Text/SorteerGootClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "9b2b2c27-a039-4b43-a66f-69875a355ea3", 
+      "type": "dut", 
+      "file": "Simulatie/SorterenDUT.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "fd2c9088-d429-4a7d-a35d-be9e3e393639", 
+      "type": "pou", 
+      "file": "Programma Ladder/MagazijnPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "3aabc206-e738-4440-9d18-c7392fd61a55", 
+      "type": "pou", 
+      "file": "Programma Ladder/HoofdPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "8ef9490e-4e85-4891-8c6e-e5528ace0f2c", 
+      "type": "pou", 
+      "file": "Programma Ladder/OverzetterPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "c18410a2-9a3b-47f5-bb69-2c33b43295d4", 
+      "type": "pou", 
+      "file": "Programma Ladder/SorterenPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "376a3b9b-ffcb-456d-8776-dd58874ae308", 
+      "type": "pou", 
+      "file": "Programma Ladder/BedieningPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "e007a75c-d5b2-4080-bf15-bce41ee4101a", 
+      "type": "pou", 
+      "file": "Programma Ladder/SignaleringPrg.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "be2a53db-7c9e-4ad3-a860-a2bf4436dd09", 
+      "type": "dut", 
+      "file": "Simulatie/MagazijnDUT.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "b21a5e7f-c4dc-487b-a7fe-5566c280b5c4", 
+      "type": "pou", 
+      "file": "Simulatie/SorterenGootSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "47da0db0-135b-47c0-a128-68a315ff003c", 
+      "type": "pou", 
+      "file": "Programma Structured Text/MagazijnClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "36477566-3aec-4360-8781-ea774fd3877a", 
+      "type": "pou", 
+      "file": "Programma Structured Text/Main.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "58ee4d45-df74-4fec-a985-3e12e398af03", 
+      "type": "gvl", 
+      "file": "GVL.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "35c92700-00fb-4989-8317-1465790a2d0e", 
+      "type": "pou", 
+      "file": "Programma Structured Text/SorteerStationClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "ea67f27e-5252-4b6c-9f73-4d1a172f37a1", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerStationClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "b95b2d22-62c6-47a3-9676-308b05a307ca", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "032b9659-3434-45b8-8fdb-0ab2e62ada35", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "eebb9d7f-1cf7-4283-9cf8-917d32ebf700", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "9d69af6f-fde1-49ff-831e-3a8c828d75d6", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerStationClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e6304961-1bd1-42e4-a9d5-23346cad67fd", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "715f58e6-f6ec-4f14-b092-522342d38570", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "997bd5c0-5f86-437d-8ba6-e952c2e3ec09", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "409c0c50-6aaf-4c3e-b2ce-559f8002709a", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "2c40c7f6-eb4a-43b7-869c-b793a8afad39", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isMagazijnLeeg.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "15232f76-62a5-43b2-9caf-70fe865b9c31", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/MagazijnTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "fc4d70b9-2fdd-47c4-9eb6-0677eaee3f32", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "7b8ec634-5d72-4ce8-88c0-25a2cbff64ed", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "0cbb22a2-06d2-40d8-a2fc-23928a1008ec", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "194c4e85-d70f-429c-a0b7-6215997449a1", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/magazijnStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "00773d8c-ab4b-44dd-b52d-dbf8a6b01a9b", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/OverzetterTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "d74d08aa-b859-4493-8853-6aa42860e94e", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "cbd6400d-8b9d-4685-b774-296e17eb211f", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "c4cc1158-2688-4325-9178-6af1f9cb2af5", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "94118b5d-b6ef-4dbb-91e7-78d9b60e3d55", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "43f18522-9b40-4deb-bdee-fe2c4b067194", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/overzetterStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "c7e27783-8c33-4181-9b25-f81a64ccbf15", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/SorteerTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "b704cebb-939d-403b-8e48-523d2033e358", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/sorteerStationStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "0f5fdb82-4e29-4c15-b7ea-f53b4cd5e2c1", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e0b9398b-5649-4b3a-a4f6-2d49907771b9", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "dfd1f86f-3c40-4fd2-a1a5-9cbb606a1aa7", 
+      "type": "pou", 
+      "file": "Programma Structured Text/MeetstationClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "1be79aa9-27fe-4413-9ca3-803c595b7943", 
+      "type": "method", 
+      "file": "Programma Structured Text/MeetstationClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "d3c348b1-ab7c-46ea-a772-d6b4bbebf610", 
+      "type": "dut", 
+      "file": "Programma Structured Text/productType.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "00f4c863-ee90-497b-8e89-69ad55e6a45f", 
+      "type": "method", 
+      "file": "Programma Structured Text/MeetstationClass/getProductType.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "126ed715-d20d-42f5-b90d-bac93a8e96f5", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "11d4abf3-eddd-4df1-bfb0-b886d065c175", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "d25feaee-1170-4b92-a277-70ab105fcbdf", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "5cb3e9ec-d960-45e1-823a-44fbfafb2556", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "a1cf8a8e-a8d1-40a6-9c6e-0fc660151e9c", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "47975b17-d8d3-498f-9457-1df8aea61141", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/sorteerStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "1b9e5cc7-8b1d-4058-aaf6-fe1c4bce9d1e", 
+      "type": "pou", 
+      "file": "Programma Structured Text/UitvoerGootClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "33cea20b-071d-4350-a818-454f9aa465bd", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "d1cad490-d24a-4eb8-aaf9-96c3d8d89bda", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "f855f27e-0e53-46a8-8e05-b0ac7a08b4df", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "09b57347-4dd3-427a-a650-d104346f9257", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "be31b1f5-0744-4f14-8692-1ddad06c2f6f", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "b442f1ca-2ee9-48df-a398-7eb89d4f0104", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/gaUit.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e3800524-710d-45af-a0d2-1c7f41847671", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/gaIn.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "a518db34-173b-48f6-acee-495ac242c3ea", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/isUit.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "8b5c5c8e-867b-4190-a82f-10b438ed6053", 
+      "type": "method", 
+      "file": "Programma Structured Text/UitvoerGootClass/isIn.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "57257041-babd-4739-b01e-6be1255e0559", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/uitvoerGootStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "223e3203-be01-4e1e-a891-57a0582f133d", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/UitvoerGootTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e5a2186b-9e6e-4e4d-9e6b-d4162b51b78d", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/isGootVol.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "69263cf2-a8e0-4025-ba86-ed9b28ff3164", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/uitvoerGootIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "bbd695c1-2947-472d-b31a-040542e2d871", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/sorteerGootIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "49ac3cad-efce-4a45-b97d-bfbddfd10a4d", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/meetstationIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "5cb7f6ee-5934-4a25-b6b1-c8c8bbd5e68f", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/magazijnIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "78be409b-6c05-47cb-83c6-2185bb1b2e3b", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/overzetterIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "0b59d5b2-38f1-4049-8096-851b0a3b592f", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/sorteerStationIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "004f5be8-4116-42f0-a943-0921ccbd9ed2", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/hmiIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "cc9f5ffa-b719-49cb-a7ba-93790d0b2840", 
+      "type": "method", 
+      "file": "Programma Structured Text/SorteerGootClass/productTellerReset.st", 
+      "impl": true, 
+      "decl": true
+    }
+  ], 
+  "niet_tekstuele_implementatie": [
+    "Programma Ladder/MagazijnPrg", 
+    "Programma Ladder/HoofdPrg", 
+    "Programma Ladder/OverzetterPrg", 
+    "Programma Ladder/SorterenPrg", 
+    "Programma Ladder/BedieningPrg", 
+    "Programma Ladder/SignaleringPrg"
+  ]
+}
