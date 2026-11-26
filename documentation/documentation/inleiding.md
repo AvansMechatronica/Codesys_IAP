@@ -1,4 +1,4 @@
-## Inleiding
+# Inleiding
 In deze workshop ga je achtereenvolgens met de volgende 3 geavanceerd PLC programmeren thema's aan de slag:
 * Structured text Programming 
 * Object georineteerd Programming

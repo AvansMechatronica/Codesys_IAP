@@ -29,7 +29,9 @@ extensions = [
 
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store',
+                    # niet in de inhoudsopgave opgenomen (general.md is een overblijfsel van een ROS2-workshop)
+                    'general/*', 'licence.md']
 
 
 # -- Options for HTML output -------------------------------------------------

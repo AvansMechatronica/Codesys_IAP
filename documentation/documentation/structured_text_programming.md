@@ -1,4 +1,4 @@
-# Thema: Stuctured Text Programming
+# Thema: Structured Text Programming
 ## Context: Bekermagazijn
 
 In deze opdracht ga je het bekermagazijn programeren in de **IEC-61131 PLC programeertaal Structured Text**.

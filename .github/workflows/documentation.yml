@@ -5,20 +5,26 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: write
 
+# De documentatie op GitHub Pages wordt gebouwd vanuit deze branch (de werkbranch).
+env:
+  DOCS_BRANCH: '2026'
+
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Install dependencies
         run: pip install sphinx sphinx_rtd_theme myst_parser sphinx-copybutton
       - name: Sphinx build
         run: |
-          sphinx-build documentation _build
+          sphinx-build -b html documentation _build
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref_name == env.DOCS_BRANCH }}
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}

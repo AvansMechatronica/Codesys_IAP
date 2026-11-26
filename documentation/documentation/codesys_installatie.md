@@ -1,4 +1,4 @@
-# Codesys installate
+# Codesys installatie
 
 Voor de uitvoering van deze workshops wordt gebruik gemaakt van Codesys met support voor Hitachi PLC's.
 Je kunt deze downloaden vanaf de [HiFlex-site](https://shop.hiflex.nl/assortiment/plcs/hx-cp1s08-cpu)

@@ -6,10 +6,10 @@
 Welkom bij de Codesys Geavanceerd PLC Programmeren workshop
 ===========================================================
 
-**Codesys Geavanceerd PLC Programmeren workshop** is een workshop voor Avans studenten die de module Industriële Automatiserings Principes volgen in het kader van de differentiatie  Automatisering & Smart Industrie
+**Codesys Geavanceerd PLC Programmeren workshop** is een workshop voor Avans studenten die de module Industriële Automatiseringsprincipes volgen in het kader van de differentiatie Automatisering & Smart Industrie
 
-.. Opmerking::
-   Bij de uitvoering van de opdrachten wordt ervan uitgegaan dat de toegepaste PLC "Nieuw uit doos" is. Je dient zelf te onderzoeken hoe de PLC in berijf genomen kan worden.
+.. note::
+   Bij de uitvoering van de opdrachten wordt ervan uitgegaan dat de toegepaste PLC "Nieuw uit doos" is. Je dient zelf te onderzoeken hoe de PLC in bedrijf genomen kan worden.
 
 
 
@@ -25,7 +25,7 @@ Welkom bij de Codesys Geavanceerd PLC Programmeren workshop
 
 Deze workshop is ontwikkeld door:
 
-+ Opleinding Mechatronica
++ Opleiding Mechatronica
 + Avans Academie voor Technologie en Innovatie (ATIx)
 
 License
