@@ -1,0 +1,300 @@
+{
+  "project": "D:\\Codesys_IAP\\Demo\\PLC1\\Magazijn Overzetter Simulatie Structured Text 2V1.project", 
+  "objects": [
+    {
+      "guid": "5f9949a3-30c4-4a0e-be7b-d8c1c0470583", 
+      "type": "pou", 
+      "file": "Programma Structured Text/OverzetterClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "5e56ae87-ba35-45d4-b1ac-4d6d0bfa13a7", 
+      "type": "pou", 
+      "file": "Simulatie/MagazijnSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "fcb52282-518f-4019-b512-49b4055b62b8", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "43897f4f-5ee7-47b6-8546-8090bd443650", 
+      "type": "gvl", 
+      "file": "Simulatie/SIM.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "a8a5894c-a8f6-431d-a3da-6303fc193702", 
+      "type": "pou", 
+      "file": "Simulatie/OverzetterSim.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "57933e15-edac-47b3-a9ac-447e50b3dc87", 
+      "type": "dut", 
+      "file": "Simulatie/OverzetterDUT.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "9b29a3d7-7bdf-4272-b4f3-f5a88a8ec4f6", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/isMagazijnLeeg.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "ce441231-3437-435e-a59a-ce2f4ab84605", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/stationIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "9f717047-9a31-4505-946a-455b0cbe64b5", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "404a9422-b765-45e9-90cb-bf5870c75780", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "2618f34f-97f4-4220-9fed-fe93c4251611", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "307daad6-9ba0-4fb3-bb75-1cd7adccfeb7", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "46fa4608-e10e-4d7f-8bf6-1ccc89867ec4", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "9e66063d-91d7-4099-be2d-c174ff1e3e7d", 
+      "type": "pou", 
+      "file": "Programma Structured Text/StationClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "be2a53db-7c9e-4ad3-a860-a2bf4436dd09", 
+      "type": "dut", 
+      "file": "Simulatie/MagazijnDUT.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "bbdbcb7f-06a2-4f5b-b17c-1b5c82a0f684", 
+      "type": "method", 
+      "file": "Programma Structured Text/StationClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "47da0db0-135b-47c0-a128-68a315ff003c", 
+      "type": "pou", 
+      "file": "Programma Structured Text/MagazijnClass.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "36477566-3aec-4360-8781-ea774fd3877a", 
+      "type": "pou", 
+      "file": "Programma Structured Text/Main.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "58ee4d45-df74-4fec-a985-3e12e398af03", 
+      "type": "gvl", 
+      "file": "GVL.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "6a2d8802-e693-415d-a1a6-e2b9e8bb641c", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/stationStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "b95b2d22-62c6-47a3-9676-308b05a307ca", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "032b9659-3434-45b8-8fdb-0ab2e62ada35", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/initialize.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e6304961-1bd1-42e4-a9d5-23346cad67fd", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "715f58e6-f6ec-4f14-b092-522342d38570", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/cycle.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "409c0c50-6aaf-4c3e-b2ce-559f8002709a", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "2c40c7f6-eb4a-43b7-869c-b793a8afad39", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isMagazijnLeeg.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "15232f76-62a5-43b2-9caf-70fe865b9c31", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/MagazijnTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "fc4d70b9-2fdd-47c4-9eb6-0677eaee3f32", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "7b8ec634-5d72-4ce8-88c0-25a2cbff64ed", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "0cbb22a2-06d2-40d8-a2fc-23928a1008ec", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "194c4e85-d70f-429c-a0b7-6215997449a1", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/magazijnStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "00773d8c-ab4b-44dd-b52d-dbf8a6b01a9b", 
+      "type": "pou", 
+      "file": "Programma Structured Text/TestProgramms/OverzetterTest.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "d74d08aa-b859-4493-8853-6aa42860e94e", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/isError.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "cbd6400d-8b9d-4685-b774-296e17eb211f", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/isKlaar.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "c4cc1158-2688-4325-9178-6af1f9cb2af5", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/reset.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "94118b5d-b6ef-4dbb-91e7-78d9b60e3d55", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/start.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "43f18522-9b40-4deb-bdee-fe2c4b067194", 
+      "type": "dut", 
+      "file": "Programma Structured Text/States/overzetterStates.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "0f5fdb82-4e29-4c15-b7ea-f53b4cd5e2c1", 
+      "type": "method", 
+      "file": "Programma Structured Text/MagazijnClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "e0b9398b-5649-4b3a-a4f6-2d49907771b9", 
+      "type": "method", 
+      "file": "Programma Structured Text/OverzetterClass/noodstop.st", 
+      "impl": true, 
+      "decl": true
+    }, 
+    {
+      "guid": "5cb7f6ee-5934-4a25-b6b1-c8c8bbd5e68f", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/magazijnIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "78be409b-6c05-47cb-83c6-2185bb1b2e3b", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/overzetterIO.st", 
+      "impl": false, 
+      "decl": true
+    }, 
+    {
+      "guid": "004f5be8-4116-42f0-a943-0921ccbd9ed2", 
+      "type": "dut", 
+      "file": "Programma Structured Text/Structures/hmiIO.st", 
+      "impl": false, 
+      "decl": true
+    }
+  ], 
+  "niet_tekstuele_implementatie": []
+}

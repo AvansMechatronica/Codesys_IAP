@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP16 Patch 7" creationDateTime="2026-11-26T15:40:03.8319667" />
+  <contentHeader name="Simulatie Sorteer Station" version="0.1.0" modificationDateTime="2026-11-26T15:38:51.3873168" organization="Avans" author="Rene Potters/Gerard Harkema">
+    <Comment>Simulatie voor opstelling Sorteer Station.</Comment>
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation>
+          <property name="Author" type="string">Rene Potters/Gerard Harkema</property>
+          <property name="Company" type="string">Avans</property>
+          <property name="Description" type="string">Simulatie voor opstelling Sorteer Station.</property>
+          <property name="Project" type="string">Magazijn Overzetter Simulatie Structured Text 2V1 - Leeg</property>
+          <property name="Title" type="string">Simulatie Sorteer Station</property>
+          <property name="Version" type="version">0.1.0</property>
+        </ProjectInformation>
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Device">
+        <resource name="ApplicationSt">
+          <task name="MainTask" interval="PT0.02S" priority="1">
+            <pouInstance name="Main" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+                <TaskSettings KindOfTask="Cyclic" Interval="t#20ms" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                  <Watchdog Enabled="false" TimeUnit="ms" Sensitivity="1" />
+                </TaskSettings>
+              </data>
+            </addData>
+          </task>
+          <task name="Simulatie" interval="PT0.02S" priority="1">
+            <pouInstance name="MagazijnSim" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <pouInstance name="OverzetterSim" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+                <TaskSettings KindOfTask="Cyclic" Interval="t#20ms" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                  <Watchdog Enabled="false" TimeUnit="ms" Sensitivity="1" />
+                </TaskSettings>
+              </data>
+            </addData>
+          </task>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+              <Libraries>
+                <Library Name="#System_VisuElems" Namespace="VisuElems" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElems, 3.5.13.20 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemMeter" Namespace="VisuElemMeter" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemMeter, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemsSpecialControls" Namespace="VisuElemsSpecialControls" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsSpecialControls, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemsWinControls" Namespace="VisuElemsWinControls" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsWinControls, 3.5.13.20 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemTextEditor" Namespace="VisuElemTextEditor" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemTextEditor, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemTrace" Namespace="VisuElemTrace" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemTrace, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuNativeControl" Namespace="VisuNativeControl" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuNativeControl, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemsAlarm" Namespace="VisuElemsAlarm" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsAlarm, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemCamDisplayer" Namespace="VisuElemCamDisplayer" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemCamDisplayer, 3.5.12.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElem3DPath" Namespace="VisuElem3DPath" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElem3DPath, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemsDateTime" Namespace="VisuElemsDateTime" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsDateTime, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#System_VisuElemXYChart" Namespace="VisuElemXYChart" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemXYChart, 3.5.13.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#system_visuinputs" Namespace="visuinputs" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="visuinputs, 3.5.13.0 (system)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+                <Library Name="#Standard" Namespace="Standard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Standard, * (System)" />
+                <Library Name="#Util" Namespace="Util" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Util, * (System)">
+                  <Parameters>
+                    <Parameter Name="IBLOCKSIZE" Value="22800" />
+                  </Parameters>
+                </Library>
+                <Library Name="VisuDialogs, 3.5.16.40 (System)" Namespace="VisuDialogs" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" />
+                <addData />
+              </Libraries>
+            </data>
+          </addData>
+        </resource>
+        <addData>
+          <data name="Device" handleUnknown="discard">
+            <Device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="">
+              <DeviceType>
+                <DeviceIdentification>
+                  <Type>4097</Type>
+                  <Id>0000 0002</Id>
+                  <Version>3.5.16.70</Version>
+                </DeviceIdentification>
+                <Connector moduleType="55000" interface="Hitachi.Rack" connectorId="1">
+                  <HostParameterSet />
+                </Connector>
+                <Connector moduleType="50012" interface="Hitachi.ExpansionUnit" connectorId="12">
+                  <HostParameterSet />
+                </Connector>
+                <Connector moduleType="256" interface="Common.PCI" connectorId="13">
+                  <HostParameterSet />
+                </Connector>
+                <DeviceParameterSet>
+                  <Parameter ParameterId="458758" type="std:STRING" IndexInDevDesc="0">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58758" visiblename="IP Address" onlineaccess="read" desc="IP Address">'192.168.1.31'</Value>
+                    <Name>IP Address</Name>
+                    <Description>IP Address</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458759" type="std:STRING" IndexInDevDesc="1">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58759" visiblename="Subnet Mask" onlineaccess="read" desc="Subnet Mask">'255.255.255.0'</Value>
+                    <Name>Subnet Mask</Name>
+                    <Description>Subnet Mask</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458760" type="std:STRING" IndexInDevDesc="2">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58760" visiblename="Default Gateway" onlineaccess="read" desc="Default Gateway">'0.0.0.0'</Value>
+                    <Name>Default Gateway</Name>
+                    <Description>Default Gateway</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458761" type="localTypes:typeyesno" IndexInDevDesc="4">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58761" visiblename="Change IP information" onlineaccess="read" desc="Change IP information">0</Value>
+                    <Name>Change IP information</Name>
+                    <Description>Change IP information</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458762" type="localTypes:typeIECmode" IndexInDevDesc="5">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58762" visiblename="Serial port mode" onlineaccess="read" desc="Serial port mode">1</Value>
+                    <Name>Serial port mode</Name>
+                    <Description>Serial port mode</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458763" type="localTypes:typeRS232C_RS485" IndexInDevDesc="6">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58763" visiblename="Serial port type" onlineaccess="read" desc="Serial port type">0</Value>
+                    <Name>Serial port type</Name>
+                    <Description>Serial port type</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458764" type="localTypes:typeELink_speed" IndexInDevDesc="3">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58764" visiblename="Ethernet port Link speed / Duplex mode" onlineaccess="read" desc="Ethernet port Link speed / Duplex mode">0</Value>
+                    <Name>Ethernet port Link speed / Duplex mode</Name>
+                    <Description>Ethernet port Link speed / Duplex mode</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458765" type="localTypes:typeyesno" IndexInDevDesc="8">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58765" visiblename="Reset all outputs in STOP" onlineaccess="read" desc="Reset all outputs in STOP">1</Value>
+                    <Name>Reset all outputs in STOP</Name>
+                    <Description>Reset all outputs in STOP</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458767" type="localTypes:typeyesno" IndexInDevDesc="7">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58767" visiblename="Serial port term. resistor (RS-422/485)" onlineaccess="read" desc="Serial port term. resistor (RS-422/485)">0</Value>
+                    <Name>Serial port term. resistor (RS-422/485)</Name>
+                    <Description>Serial port term. resistor (RS-422/485)</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458768" type="localTypes:typeStopDefinition" IndexInDevDesc="9">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58768" visiblename="Stop switch definition" onlineaccess="read" desc="Stop switch definition">1</Value>
+                    <Name>Stop switch definition</Name>
+                    <Description>Stop switch definition</Description>
+                  </Parameter>
+                  <Parameter ParameterId="458769" type="localTypes:typeyesno" IndexInDevDesc="10">
+                    <Attributes onlineaccess="read" />
+                    <Value name="_x0034_58769" visiblename="External PHY Clock" onlineaccess="read" desc="Do not set YES in HARDWARE REV.00">0</Value>
+                    <Name>External PHY Clock</Name>
+                    <Description>Do not set YES in HARDWARE REV.00</Description>
+                  </Parameter>
+                </DeviceParameterSet>
+              </DeviceType>
+            </Device>
+          </data>
+          <data name="configurations" handleUnknown="discard">
+            <configurations>
+              <configuration name="Basic">
+                <addData>
+                  <data name="Device" handleUnknown="discard">
+                    <Device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" fixedIndex="0" xmlns="">
+                      <DeviceType>
+                        <DeviceIdentification>
+                          <Type>50111</Type>
+                          <Id>1070 0010</Id>
+                          <Version>3.4.4.0</Version>
+                        </DeviceIdentification>
+                        <Connector moduleType="50111" role="child" interface="Hitachi.Rack" connectorId="1">
+                          <HostParameterSet />
+                        </Connector>
+                        <Connector moduleType="50000" interface="Hitachi.LocalBusOption" connectorId="2" hostpath="1">
+                          <HostParameterSet />
+                        </Connector>
+                        <DeviceParameterSet />
+                      </DeviceType>
+                    </Device>
+                  </data>
+                  <data name="configurations" handleUnknown="discard">
+                    <configurations>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                      <configuration name="&lt;Empty&gt;">
+                        <addData>
+                          <data name="Device" handleUnknown="discard" />
+                        </addData>
+                      </configuration>
+                    </configurations>
+                  </data>
+                </addData>
+              </configuration>
+            </configurations>
+          </data>
+        </addData>
+      </configuration>
+    </configurations>
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/globalvars" handleUnknown="implementation">
+      <globalVars name="GVL">
+        <variable name="Ix_Resetknop">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Indrukken resetknop </xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_Hand">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Keuzeknop staat op hand</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_Auto">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Keuzeknop staat op auto</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_Noodstop">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Indrukken noodstop</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_MagazijnLeeg">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Bekers magazijn zijn op</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_UitstoterBekerIn">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Beker is uit dekselmagazijn gestoten</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_UitstoterBekerUit">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Uitstoter Beker haalt nieuwe beker op</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_Stopknop">
+          <type>
+            <BOOL />
+          </type>
+          <initialValue>
+            <simpleValue value="TRUE" />
+          </initialValue>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Indrukken startknop</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_Startknop">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Indrukken stopknop</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_PersluchtAanwezig">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Perslucht is aanwezig</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_VacuumAanwezig">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Werkstuk door overzetter opgepakt</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_OverzetterIsLinks">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Overzetter haalt beker op(linker pos.)</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Ix_OverzetterIsRechts">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Overzetter plaatst beker op afgifteplaats</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_BekerUitstoten">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Beker uit magazijn stoten</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_VacuumAan">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Beker oppakken</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_BekerLossen">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Beker loslaten</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_OverzetterLinks">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Overzetter naar bekermagazijn</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_OverzetterRechts">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">Overzetter naar afgifteplaats</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_GeleLamp">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Visualisatie invisible Gele vlak</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_GroeneLamp">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Visualisatie invisible groene vlak</xhtml>
+          </documentation>
+        </variable>
+        <variable name="Qx_RodeLamp">
+          <type>
+            <BOOL />
+          </type>
+          <documentation>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml"> Visualisatie invisible rode vlak</xhtml>
+          </documentation>
+        </variable>
+      </globalVars>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+      <Libraries>
+        <Library Name="#IecSfc" Namespace="IecSfc" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="IecSfc, 3.4.2.0 (System)" />
+        <Library Name="#Analyzation" Namespace="Analyzation" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="Analyzation, 3.5.2.0 (System)">
+          <Parameters>
+            <Parameter Name="TABLE_UPPER_BOUND" Value="15" />
+            <Parameter Name="STRING_LENGTH_EXP" Value="255" />
+            <Parameter Name="STRING_LENGTH_ADDRESS" Value="20" />
+            <Parameter Name="STRING_LENGTH_COMMENT" Value="255" />
+            <Parameter Name="STRING_LENGTH_OUTSTRING" Value="255" />
+            <Parameter Name="TABLE_SHOW_VALID_ITEMS" Value="FALSE" />
+          </Parameters>
+        </Library>
+        <Library Name="#System_VisuElems" Namespace="VisuElems" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElems, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemMeter" Namespace="VisuElemMeter" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemMeter, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemsSpecialControls" Namespace="VisuElemsSpecialControls" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsSpecialControls, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemsWinControls" Namespace="VisuElemsWinControls" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsWinControls, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemTextEditor" Namespace="VisuElemTextEditor" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemTextEditor, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemTrace" Namespace="VisuElemTrace" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemTrace, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuNativeControl" Namespace="VisuNativeControl" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuNativeControl, 3.5.16.0 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemsAlarm" Namespace="VisuElemsAlarm" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsAlarm, 3.5.16.70 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemCamDisplayer" Namespace="VisuElemCamDisplayer" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemCamDisplayer, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElem3DPath" Namespace="VisuElem3DPath" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElem3DPath, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemsDateTime" Namespace="VisuElemsDateTime" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemsDateTime, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#System_VisuElemXYChart" Namespace="VisuElemXYChart" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="VisuElemXYChart, 3.5.16.30 (System)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <Library Name="#system_visuinputs" Namespace="visuinputs" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="visuinputs, 3.5.16.30 (system)" ResolverGuid="2717eb6a-dd07-4c66-8d8d-cacebd7b18ae" />
+        <addData />
+      </Libraries>
+    </data>
+  </addData>
+</project>
